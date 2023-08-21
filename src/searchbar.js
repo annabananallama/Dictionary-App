@@ -12,12 +12,6 @@ export default function SearchBar() {
     alert(`Searching for ${word}`);
   }
 
-  function handleKeyPress(event) {
-    if (event.key === "Enter") {
-      handleSubmit(event);
-    }
-  }
-
   return (
     <div>
       <form onSubmit={handleSubmit}>
