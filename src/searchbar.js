@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function SearchBar() {
   const [word, setWord] = useState("");
@@ -11,6 +12,11 @@ export default function SearchBar() {
     event.preventDefault();
     alert(`Searching for ${word}`);
   }
+
+  function handleResponse(response) {}
+
+  let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+  axios.get(apiUrl).then(handleResponse);
 
   return (
     <div>
