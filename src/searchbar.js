@@ -24,15 +24,21 @@ export default function SearchBar() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter word here"
-          value={word}
-          onChange={handleWordChange}
-        />
-        <button type="submit">Enter</button>
-      </form>
+      <div className="bar">
+        <form onSubmit={handleSubmit}>
+          <input
+            className="text"
+            id="input"
+            type="text"
+            placeholder="Enter word here"
+            value={word}
+            onChange={handleWordChange}
+          />
+          <button type="submit" className="button">
+            Enter
+          </button>
+        </form>
+      </div>
       <Results results={results} />
     </div>
   );

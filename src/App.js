@@ -4,8 +4,8 @@ import SearchBar from "./searchbar.js";
 
 export default function App() {
   return (
-    <div>
-      <h1>Dictionary App</h1>
+    <div className="content">
+      <h1>DICTIONARY APP</h1>
       <SearchBar />
     </div>
   );
