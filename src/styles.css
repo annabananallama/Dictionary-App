@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Monofett&display=swap");
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 .background-image-container {
   background-image: url("background.jpg");
@@ -68,4 +69,13 @@ h3 {
   font-size: 30px;
   display: block;
   text-align: center;
+}
+
+.col-4 {
+  padding-bottom: 24px;
+}
+
+img {
+  border-radius: 30px;
+  border: black 10px double;
 }
